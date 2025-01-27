@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin: 'https://job-portals-swadhin.vercel.app/',
+    origin: process.env.FRONTEND_URL,
     credentials: true
 }
 
